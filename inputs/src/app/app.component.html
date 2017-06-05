@@ -1,0 +1,9 @@
+<h1>
+  Chequeo de input de tipo fecha y 2 way databinding
+</h1>
+
+<form>
+    <input type="date" name="fecha" min=2014-09-08  [(ngModel)]="fecha">
+    <input type="time" step="1" name="hora" value="hora" [(ngModel)]="hora">
+    <button type="button" (click)="campo()"name="button">Fecha</button>
+</form>
