@@ -11,6 +11,7 @@ export class ChildComponent implements OnInit {
 // I  would it this way...
 @Input() title: string;
 @Input('name') other: string;
+@Input('') power: string;
   constructor() {
 
    }
