@@ -4,16 +4,20 @@ import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+  <component-child [title]="title" [name]="name"></component-child>
+  `
 })
 export class AppComponent {
 
+    private title: string;
+    private name: string;
 
     constructor(){
-
+        this.title = 'My destiny';
+        this.name = "Rafael"
     }
 
-    
+
 
 }
